@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        section{
+            display: flex;
+            height: 100vw;
+            width: 100vw;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box1{
+            width: 800px;
+            height: 400px;
+            color: black;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+
+        .box2{
+            width: 800px;
+            height: 400px;
+            color: black;
+            background-color: darkgreen;
+            border-radius: 10px;
+        }
+
+        .box3{
+            width: 600px;
+            height: 300px;
+            color: black;
+            background-color: rgb(69, 69, 21);
+            border-radius: 10px;
+        }
+
+        .box4{
+            width: 400px;
+            height: 250px;
+            color: black;
+            background-color: skyblue;
+            border-radius: 10px;
+        }
+        .box5{
+            width: 300px;
+            height: 300px;
+            color: black;
+            background-color: maroon;
+            border-radius: 10px;
+        }
+
+        .h{
+            font-size: 60px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 0px) and (max-width: 200px) {
+            body{
+                background-color: khaki;
+            }
+        
+            .laptop_large {
+                display: none;
+            }
+            .laptop {
+            display: none;
+            }
+            .tablet{
+                display: none;
+            }
+            .mobile{
+                display: none;
+            }
+        } 
+
+        
+        @media screen and (max-width: 1440px) and (min-width: 1024px) {
+            body{
+                background-color: palegreen;
+            }
+            .laptop_large {
+                display: block;
+            }
+            .laptop {
+            display: none;
+            }
+            .tablet{
+                display: none;
+            }
+            .mobile{
+                display: none;
+            }
+        } 
+
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            body {
+                background-color: yellow;
+            }
+            .laptop_large {
+                display: none;
+            }
+            .laptop {
+            display: block;
+            }
+            .tablet{
+                display: none;
+            }
+            .mobile{
+                display: none;
+            }
+
+        } 
+
+        @media screen and (max-width: 768px) and (min-width: 425px) {
+            body {
+                background-color: orchid;
+            }
+            .laptop_large {
+                display: none;
+            }
+            .laptop {
+            display: none;
+            }
+            .tablet{
+                display: block;
+            }
+            .mobile{
+                display: none;
+            }
+        } 
+
+        @media screen and (max-width: 425px) and (min-width:200px ) {
+            body {
+                background-color: darkolivegreen;
+            }
+            .laptop_large {
+                display: none;
+            }
+            .laptop {
+            display: none;
+            }
+            .tablet{
+                display: none;
+            }
+            .mobile{
+                display: block;
+            }
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <Section>
+        <nav class="laptop_large">
+            <div>
+                <p>Frame: 1</p>
+            </div>
+            <div class="box box1">
+                <h1 class="h">This is a Media Query demo page.</h1>
+            </div>
+            <div>
+                <p>Frame: 2</p>
+            </div>
+            <div class="box box2">
+                <h1 class="h">This is a Media Query demo page.</h1>
+            </div>
+        </nav>
+    
+        <nav class="laptop">
+            <div>
+                <p>Frame: 3</p>
+            </div>
+            <div class="box box3">
+                <h1 class="h">This is a Media Query demo page.</h1>
+            </div>
+        </nav>
+        
+        <nav class="tablet">
+            <div>
+                <p>Frame: 4</p>
+            </div>
+            <div class="box box4">
+                <h1 class="h">This is a Media Query demo page.</h1>
+            </div>
+        </nav>
+    
+        <nav class="mobile">
+            <div>
+                <p>Frame: 5</p>
+            </div>
+            <div class="box box5 ">
+                <h1 class="h">This is a Media Query demo page.</h1>
+            </div>
+        </nav>
+    </Section>
+</body>
+</html>
